@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+  <link rel="stylesheet" href="./assets/index-9253ba1e.css">
+</head>
+<body>
+    <div class="container mt-4 mb-4">
+    <h1>Feedback Form</h1>
+        <p class="fs-5 pb-1 w-50">If you would like to provide feedback, please feel free to do so in the form below.</p>
+        <form method="post" action="email.php" class="email-form">
+            <div class="form-group">
+            <label for="name" class="fs-5 pb-2">Full Name</label>
+            <input type="text" class="form-control w-25 bg-light" name="name" id="name" required>
+            </div>
+            <div class="form-group">
+            <label for="email" class="fs-5 pt-2 pb-2">Email</label>
+            <input type="email" class="form-control w-25  bg-light" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+            <input type="text" class="form-control w-25  bg-light form-control__hp" name="emailaddress" id="emailaddress">
+            </div>
+            <div class="form-group">
+            <label for="subject" class="fs-5 pt-2 pb-2">Subject</label>
+            <input type="text" class="form-control w-25  bg-light" name="subject" id="subject" required>
+            </div>
+            <div class="form-group">
+            <label for="comments" class="fs-5 pt-2 pb-2">Comments</label>
+            <textarea name="comments" class="form-control w-50  bg-light" rows="4" id="comments" required></textarea>
+            </div>
+            <br>
+            
+            <button class="btn btn-dark" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
